@@ -28,7 +28,7 @@ app.get("/add",(req,res)=>{
             throw new Error("Parsing Error")
         }
         const result = add(n1,n2);
-        res.status(200).json({statuscode:200,data : result});
+        res.status(200).json({statuscocde:200,data : result});
         logger.log({
             level: "info", 
             message: `The provided numbers ${n1} & ${n2} have been added, the result is ${result}`,
